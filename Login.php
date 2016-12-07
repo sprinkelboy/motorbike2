@@ -42,6 +42,8 @@ echo "
 	</form>
   </div>";
 }
-
+?>
+	
+	
 </body>
 </html>
