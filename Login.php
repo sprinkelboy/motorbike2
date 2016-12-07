@@ -9,13 +9,17 @@
 <body>
 	
 <?php
+	
+	//Checking if there are any post value with the name username
+	//If it exists I put it in the variable $username (else it's empty)
 if(isset($_POST["username"]) != "")
 {
 	$username=$_POST["username"];
 }else{
 	$username="";
 }
-	
+	//Checking if there are any post value with the name password
+	//If it exists I put it in the variable $password (else it's empty)
 	if(isset($_POST["password"]) != "")
 {
 	$password=$_POST["password"];
@@ -23,7 +27,7 @@ if(isset($_POST["username"]) != "")
 	$password="";
 }
 
-//Alert for missing password
+//Alert for missing password if username is entered and password is empty
 if($password == "" && $username != "")
 {
 $pwdalert="<font color=red>Missing input</font>";	
@@ -31,14 +35,16 @@ $pwdalert="<font color=red>Missing input</font>";
 $pwdalert="";
 }
 
-//Alert for missing username
+//Alert for missing username if password is entered and username is empty
 if($password != "" && $username == "")
 {
 $useralert="<font color=red>Missing input</font>";	
 }else{
 $useralert="";
 }
-	
+
+	//If both username and password has a value (entered data in both)
+	//verifying username and password is correct and redirect to index.php
 if($password != "" && $username != "")
 {
 	echo "checking username and password....";
