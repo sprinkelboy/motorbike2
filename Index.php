@@ -11,7 +11,7 @@
     <p id="logo_text"> Adrian Agency </p>
 	<a href="#" id="host_link"> Order Now </a>
 	<a href="#" id="help_link"> Help </a>
-	<a href="Login.html" id="login_link"> Login </a>
+	<a href="Login.php" id="login_link"> Login </a>
 	<a href="#" id="signup_link"> Sign Up </a>
 	</div>
 	<div id="welcome_text_div"> 
