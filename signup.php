@@ -10,6 +10,9 @@
  <div class="container">
 	<img src="user.png">
     <form>
+	    <div class="form-input">
+	    <input type="text" name="fullname" placeholder="Enter Firstname Lastname">
+	  </div>
 	  <div class="form-input">
 	    <input type="text" name="username" placeholder="Enter Username">
 	  </div>
