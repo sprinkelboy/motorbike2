@@ -22,6 +22,22 @@ if(isset($_POST["username"]) != "")
 }else{
 	$password="";
 }
+
+//Alert for missing password
+if($password == "" && $username != "")
+{
+$pwdalert="<font color=red>Missing input</font>";	
+}else{
+$pwdalert="";
+}
+
+//Alert for missing username
+if($password != "" && $username == "")
+{
+$useralert="<font color=red>Missing input</font>";	
+}else{
+$useralert="";
+}
 	
 if($password != "" && $username != "")
 {
@@ -32,10 +48,10 @@ echo "
 	<img src='user.png'>
     <form method='POST'>
 	  <div class='form-input'>
-	    <input type='text' name='username' placeholder='Enter Username'>
+	    <input type='text' name='username' placeholder='Enter Username'>$useralert
 	  </div>
 	  <div class='form-input'>
-	    <input type='password' name='password' placeholder='Enter Password'>
+	    <input type='password' name='password' placeholder='Enter Password'>$pwdalert
 	  </div>
 	  <input type='submit' name='submit' value='LOGIN' class='btn-login'><br>
 	  <a href='#'>Forgot Password?</a>
