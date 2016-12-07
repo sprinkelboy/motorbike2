@@ -54,10 +54,10 @@ echo "
 	<img src='user.png'>
     <form method='POST'>
 	  <div class='form-input'>
-	    <input type='text' name='username' placeholder='Enter Username'>$useralert
+	    <input type='text' name='username' placeholder='Enter Username' value='$username'>$useralert
 	  </div>
 	  <div class='form-input'>
-	    <input type='password' name='password' placeholder='Enter Password'>$pwdalert
+	    <input type='password' name='password' placeholder='Enter Password' value='$password'>$pwdalert
 	  </div>
 	  <input type='submit' name='submit' value='LOGIN' class='btn-login'><br>
 	  <a href='#'>Forgot Password?</a>
