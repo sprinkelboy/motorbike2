@@ -11,7 +11,7 @@
 	<img src="user.png">
     <form>
 	    <div class="form-input">
-	    <input type="text" name="fullname" placeholder="Enter Firstname Lastname">
+	    <input type="text" name="fullname" placeholder="Enter Email">
 	  </div>
 	  <div class="form-input">
 	    <input type="text" name="username" placeholder="Enter Username">
